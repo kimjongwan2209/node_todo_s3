@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        #my-input {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        
+        <input id="my-input" type="file" />
+        <button id="my-button" onclick="onClickUpload();">파일 불러오기</button>
+        <form action="localhost:3001/profile" method="post" enctype="multipart/form-data"></form>
+    </div>
+    <script>
+        function onClickUpload() {
+            let myInput = document.getElementById("my-input");
+            myInput.click();
+        }
+    </script>
+</body>
+
+</html>
